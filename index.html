@@ -1,46 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>ArcGIS JavaScript Tutorials: Create a Starter App</title>
-  <style>
-    html, body, #viewDiv {
-      padding: 0;
-      margin: 0;
-      height: 100%;
-      width: 100%;
-    }
-  </style>
+  <title>Griffin Directions</title>
   
     <link rel="stylesheet" href="https://js.arcgis.com/4.14/esri/themes/light/main.css">
   <script src="https://js.arcgis.com/4.14/"></script>
+  <script src="js/main.js"></script>
   
-  <script>  
-    require([
-      "esri/Map",
-      "esri/views/MapView",
-      "esri/widgets/Directions",
-    ], function(Map, MapView, Directions) {
-
-      var map = new Map({
-        basemap: "streets-navigation-vector"
-      });
-
-      var view = new MapView({
-        container: "viewDiv",
-        map: map,
-        center: [-79.245855, 43.151005],
-        zoom: 13
-      });
-
-      var directions = new Directions({
-        view: view
-      });
-      view.ui.add(directions, "top-left");
-
-    });
-  </script>
 </head>
 <body>
   <div id="viewDiv"></div>
