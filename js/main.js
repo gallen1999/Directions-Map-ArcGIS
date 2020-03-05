@@ -19,6 +19,7 @@ require([
       var directions = new Directions({
         container: document.createElement("div"),
         view: view,
+        routeServiceUrl: "https://utility.arcgis.com/usrsvcs/appservices/gallen1999g/rest/services/World/Route/NAServer/Route_World"
       });
 
       var expandDirections = new Expand({
