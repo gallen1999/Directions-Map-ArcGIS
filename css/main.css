@@ -5,7 +5,7 @@ html, body, #viewDiv {
     width: 100%;
   }
 
-  .esri-menu{
+  .esri-search__suggestions-menu{
     top: 100% !important;
     bottom: auto !important;
   }
